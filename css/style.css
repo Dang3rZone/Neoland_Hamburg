@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
 /* font-family: 'Handlee', cursive;
@@ -38,4 +38,29 @@ body {
 .container {
   max-width: var(--maxWidth);
   margin: 0 auto;
+}
+
+/* HEADER */
+
+header .nav-top {
+  background-color: var(--secondColor);
+  padding: var(--marginGrid) 0px;
+}
+
+header .nav-top .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+header .nav-top a {
+  color: var(--firstColor);
+  text-decoration: none;
+}
+
+header .nav-top a span {
+  display: none;
+}
+
+header .nav-top a i {
+  font-size: 150%;
 }
