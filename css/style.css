@@ -94,6 +94,18 @@ header .menu {
 }
 header .menu a {
   text-decoration: none;
+  display: block;
+  padding: calc(var(--marginGrid) * 0.75);
+  color: #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+header .menu li:last-child a {
+  border: 0px;
+}
+
+header .menu .active {
+  color: var(--firstColor);
 }
 
 /* media query */
@@ -104,5 +116,21 @@ header .menu a {
   }
   header .nav-top a i {
     font-size: 120%;
+  }
+}
+@media (min-width: 1004px) {
+  header .hamburguesa {
+    display: none;
+  }
+  header .menu {
+    padding-top: 0;
+    float: right;
+  }
+  header .menu li {
+    display: inline-block;
+  }
+  header .menu li a {
+    border: none;
+    padding: 0.5em;
   }
 }
