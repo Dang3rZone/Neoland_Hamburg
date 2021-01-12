@@ -64,3 +64,14 @@ header .nav-top a span {
 header .nav-top a i {
   font-size: 150%;
 }
+
+/* media query */
+@media (min-width: 768px) {
+  header .nav-top a span {
+    display: inline;
+    color: #fff;
+  }
+  header .nav-top a i {
+    font-size: 120%;
+  }
+}
