@@ -22,6 +22,8 @@ font-family: 'Montserrat', sans-serif; */
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  position: relative;
 }
 
 img {
@@ -205,6 +207,39 @@ footer a:hover {
 .btn:hover i {
   transform: translateX(5px);
   transition: 0.5s;
+}
+
+/* OUR SERVICIOS */
+main section {
+  padding: calc(var(--marginGrid) * 3) var(--marginGrid);
+}
+
+main section h2 {
+  color: black;
+  font-family: var(--secondFont);
+  font-size: 2em;
+  text-align: center;
+}
+
+main section h2 span {
+  color: var(--firstColor);
+}
+main section .underline {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: var(--marginGrid);
+}
+main section .underline hr {
+  position: absolute;
+  width: 100%;
+  top: -1px;
+  border-color: var(--firstColor);
+}
+main section .underline span {
+  color: var(--firstColor);
+  font-weight: 700;
 }
 
 /* media query */
