@@ -1,20 +1,9 @@
-@import 'reset.css';
+@import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
-
-/* font-family: 'Handlee', cursive;
-font-family: 'Montserrat', sans-serif; */
-:root {
-  --firstFont: 'Montserrat', sans-serif;
-  --secondFont: 'Handlee', cursive;
-
-  --firstColor: #fa573a;
-  --secondColor: #21242e;
-
-  --marginGrid: 1em;
-  --fontSize: 1em;
-
-  --maxWidth: 1100px;
-}
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
 
 * {
   box-sizing: border-box;
@@ -32,21 +21,31 @@ img {
   display: block;
 }
 
+:root {
+  --fuenteprincipal: 'Montserrat', sans-serif;
+  --fuentesecundaria: 'Handlee', cursive;
+  --colorprincipal: #fa573a;
+  --colorsecundario: #21242e;
+  --margingrid: 1em;
+  --fontsize: 1em;
+  --anchomaximo: 1100px;
+}
+
 body {
-  font-family: var(--firstFont);
-  font-size: var(--fontSize);
+  font-family: var(--fuenteprincipal);
+  font-size: var(--fontsize);
 }
 
 .container {
-  max-width: var(--maxWidth);
+  max-width: var(--anchomaximo);
   margin: 0 auto;
 }
 
-/* HEADER */
+/* inicio header */
 
 header .nav-top {
-  background-color: var(--secondColor);
-  padding: var(--marginGrid) 0px;
+  background-color: var(--colorsecundario);
+  padding: var(--margingrid) 0px;
 }
 
 header .nav-top .container {
@@ -55,7 +54,7 @@ header .nav-top .container {
 }
 
 header .nav-top a {
-  color: var(--firstColor);
+  color: var(--colorprincipal);
   text-decoration: none;
 }
 
@@ -68,9 +67,10 @@ header .nav-top a i {
 }
 
 header nav {
-  padding: var(--marginGrid);
+  padding: var(--margingrid);
 }
-header nav .container::after {
+
+header nav .container:after {
   display: block;
   content: '';
   clear: both;
@@ -79,12 +79,6 @@ header nav .container::after {
 
 header nav .hamburguesa {
   cursor: pointer;
-}
-
-header nav .hamburguesa div {
-  border-top: 2px solid #aaa;
-  width: 2em;
-  margin-bottom: calc(var(--marginGrid) * 0.75);
 }
 
 header .logo {
@@ -100,10 +94,11 @@ header .menu {
   padding-top: 60px;
   text-align: center;
 }
+
 header .menu a {
   text-decoration: none;
   display: block;
-  padding: calc(var(--marginGrid) * 0.75);
+  padding: calc(var(--margingrid) * 1.25);
   color: #aaa;
   border-bottom: 1px solid #aaa;
 }
@@ -112,39 +107,52 @@ header .menu li:last-child a {
   border: 0px;
 }
 
-header .menu .active {
-  color: var(--firstColor);
+header .menu .activo {
+  color: var(--colorprincipal);
 }
 
-/* FOOTER */
+header nav .hamburguesa div {
+  border-top: 2px solid #aaa;
+  margin-bottom: calc(var(--margingrid) * 0.75);
+  width: 2em;
+}
+
+/* fin header */
+
+/* inicio footer */
+
 footer {
-  background-color: var(--secondColor);
-  padding: var(--marginGrid);
-  color: #fff;
+  background-color: var(--colorsecundario);
+  padding: var(--margingrid) 0px;
+  color: white;
   text-align: center;
-  position: absolute;
   bottom: 0;
+  position: absolute;
   width: 100%;
 }
+
 footer a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: var(--firstColor);
+  color: var(--colorprincipal);
 }
 
-.arrow a {
+.flecha a {
   display: block;
-  color: var(--firstColor);
+  color: var(--colorprincipal);
   position: fixed;
-  bottom: 1.5em;
-  right: 0.5em;
+  bottom: 2%;
+  right: 10px;
   font-size: 250%;
 }
 
-/* HERO */
+/* fin footer */
+
+/* inicio hero */
+
 .hero {
   background-image: url(../images/fondo.jpg);
   height: 60vh;
@@ -152,33 +160,51 @@ footer a:hover {
   background-size: cover;
   background-color: #777;
   background-blend-mode: multiply;
-  color: #fff;
+  color: white;
   display: flex;
 }
+
 .hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  width: 100%;
+  padding: var(--margingrid);
 }
 
 .hero h1 {
-  font-family: var(--secondFont);
+  font-family: var(--fuentesecundaria);
   font-size: 2.25em;
 }
 
 .hero h2 {
-  /* font-family: var(--firstFont); */
-  color: var(--firstColor);
-  margin: var(--marginGrid) 0;
+  color: var(--colorprincipal);
+  margin: var(--margingrid) 0;
   font-size: 1.25em;
 }
 
-.hero a {
-  /* font-family: var(--firstFont); */
-
-  margin: var(--marginGrid) 0;
+.hero p {
   font-size: 1.15em;
+}
+
+.boton {
+  display: inline-block;
+  background-color: var(--colorprincipal);
+  padding: var(--margingrid);
+  color: white;
+  text-decoration: none;
+  margin: var(--margingrid) 0;
+  border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+  background: transparent;
+  color: var(--colorprincipal);
+}
+
+.boton:hover i {
+  transform: translateX(5px);
+  transition: 0.5s;
 }
 
 .hero .social {
@@ -186,116 +212,161 @@ footer a:hover {
   justify-content: space-between;
   width: 150px;
 }
+
 .hero .social a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-size: 2em;
 }
 
-.btn {
-  display: inline-block;
-  background-color: var(--firstColor);
-  padding: 1em;
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid var(--firstColor);
-}
-.btn:hover {
-  background: transparent;
-  color: var(--firstColor);
-}
-.btn:hover i {
-  transform: translateX(5px);
-  transition: 0.5s;
-}
+/* fin hero */
 
-/* OUR SERVICIOS */
+/* inicio ourservices */
+
 main section {
-  padding: calc(var(--margingrid) * 3) var(--margingrid)
-    calc(var(--margingrid) * 5) var(--margingrid);
+  padding: calc(var(--margingrid) * 3) var(--margingrid);
 }
 
 main section h2 {
   color: black;
-  font-family: var(--secondFont);
+  font-family: var(--fuentesecundaria);
   font-size: 2em;
   text-align: center;
 }
 
 main section h2 span {
-  color: var(--firstColor);
+  color: var(--colorprincipal);
 }
+
 main section .underline {
   position: relative;
   width: 100px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: var(--marginGrid);
+  margin-bottom: var(--margingrid);
 }
+
 main section .underline hr {
   position: absolute;
   width: 100%;
   top: -1px;
-  border-color: var(--firstColor);
+  border-color: var(--colorprincipal);
 }
+
 main section .underline span {
-  color: var(--firstColor);
+  color: var(--colorprincipal);
   font-weight: 700;
 }
 
-main #ourservice .grid {
+main #ourservices .grid {
   display: grid;
 }
 
-main #ourservice .grid article {
-  padding: var(--marginGrid);
+main #ourservices .grid article {
+  padding: calc(var(--margingrid) * 2) 0;
   border-bottom: 1px solid #aaa;
 }
-main #ourservice .grid article div i {
-  color: var(--firstColor);
+
+main #ourservices .grid article div i {
+  color: var(--colorprincipal);
   font-size: 150%;
-  border: 1px solid var(--firstColor);
+  border: 1px solid var(--colorprincipal);
   padding: 0.5em;
 }
-main #ourservice .grid article h3 {
+
+main #ourservices .grid article h3 {
   font-weight: 700;
   margin: 10px 0;
   font-size: 110%;
 }
+
 main section p {
   color: #666;
   line-height: 1.25;
   margin-bottom: 10px;
 }
+
 .enlace {
   text-decoration: none;
-  color: var(--firstColor);
+  color: var(--colorprincipal);
   font-weight: 700;
 }
 
 .fa-truck {
   transform: rotateY(180deg);
 }
-/* media query */
+
+/* fin ourservices */
+
+/* inicio aboutus */
+
+main #aboutus .flex .column {
+  margin: var(--margingrid) 0;
+}
+
+main #aboutus .column h3 {
+  font-weight: 700;
+  font-size: 110%;
+}
+
+main #aboutus .column h4 {
+  margin: 0.8em 0;
+  color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main #aboutus .imagen .marco {
+  border: 3px solid var(--colorprincipal);
+  transform: rotateZ(10deg);
+  transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+  transform: rotateZ(-10deg);
+  transition: 1s;
+}
+
+main #aboutus .imagen:hover .marco,
+main #aboutus .imagen:hover .marco img {
+  transform: rotateZ(0deg);
+}
+
+/* fin aboutus */
+
+/* mediaquerys */
+
 @media (min-width: 600px) {
-  main #ourservice .grid {
+  main #ourservices .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--margingrid);
   }
-  main #ourservice .grid article:last-child {
+  main #ourservices .grid article:last-child {
     grid-column: 1/3;
-    gap: var(--marginGrid);
   }
-  main #ourservice .grid article {
+  main #ourservices .grid article {
     border-bottom: 0px;
     border-left: 1px solid #aaa;
-    padding: var(--marginGrid);
+    padding: var(--margingrid);
+  }
+  main #aboutus .flex {
+    display: flex;
+  }
+  main #aboutus .imagen {
+    width: 80%;
+  }
+  main #aboutus {
+    margin-bottom: 2em;
   }
 }
 
 @media (min-width: 768px) {
   header .nav-top a span {
     display: inline;
-    color: #fff;
+    color: white;
   }
   header .nav-top a i {
     font-size: 120%;
@@ -303,10 +374,10 @@ main section p {
   footer {
     text-align: left;
   }
-  main #ourservice .grid {
+  main #ourservices .grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  main #ourservice .grid articl:last-child {
+  main #ourservices .grid article:last-child {
     grid-column: 3/4;
   }
 }
@@ -316,14 +387,14 @@ main section p {
     display: none;
   }
   header .menu {
-    padding-top: 0;
+    padding-top: 0px;
     float: right;
   }
   header .menu li {
     display: inline-block;
   }
   header .menu li a {
-    border: none;
-    padding: 0.5em;
+    border: 0px;
+    padding: 0.5em calc(var(--margingrid));
   }
 }
