@@ -108,6 +108,34 @@ header .menu .active {
   color: var(--firstColor);
 }
 
+/* FOOTER */
+footer {
+  background-color: var(--secondColor);
+  padding: var(--marginGrid);
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--firstColor);
+}
+
+.arrow a {
+  display: block;
+  color: var(--firstColor);
+  position: fixed;
+  bottom: 1.5em;
+  right: 0.5em;
+  font-size: 250%;
+}
+
 /* media query */
 @media (min-width: 768px) {
   header .nav-top a span {
@@ -117,30 +145,11 @@ header .menu .active {
   header .nav-top a i {
     font-size: 120%;
   }
+  footer {
+    text-align: left;
+  }
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3em; /* Height of the footer */
-  background: #6cf;
-  background-color: var(--secondColor);
-  color: #fff;
-}
-footer p {
-  position: relative;
-  margin: 0 4em;
-  bottom: 0.8em;
-}
-
-footer i {
-  position: relative;
-  left: 59em;
-  bottom: 1.5em;
-  color: var(--firstColor);
-  font-size: 2em;
-}
 @media (min-width: 1004px) {
   header .hamburguesa {
     display: none;
