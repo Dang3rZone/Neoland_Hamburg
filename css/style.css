@@ -433,37 +433,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 /* BLOG */
-.blog {
-  width: 100vw;
-  height: 100vh;
-  display: absolute;
-}
 
-.blog .container .underline {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.blog .underline hr {
-  width: 50px;
-  top: -1px;
-  border-color: var(--colorprincipal);
-}
-
-.blog span {
-  color: var(--colorprincipal);
-}
-
-.blog h2 {
-  color: black;
-  font-family: var(--fuentesecundaria);
-  font-size: 2em;
-  text-align: center;
-}
-
-.blog img {
-  float: left;
-}
 /* mediaquerys */
 
 @media (min-width: 600px) {
@@ -488,6 +458,9 @@ main #aboutus .imagen:hover .marco img {
   main #aboutus {
     margin-bottom: 2em;
   }
+  .hide {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -506,9 +479,6 @@ main #aboutus .imagen:hover .marco img {
   }
   main #ourservices .grid article:last-child {
     grid-column: 3/4;
-  }
-  .hide {
-    display: none;
   }
 }
 
