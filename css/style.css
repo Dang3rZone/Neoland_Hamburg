@@ -420,12 +420,14 @@ main #aboutus .imagen:hover .marco img {
 
 #menu .active {
   background: var(--colorprincipal);
-  height: 40px;
-  width: 258px;
 }
 
 #menu .article {
   align-items: center;
+}
+
+nav .meals li {
+  padding: 5px 5px;
 }
 
 .blog .underline {
@@ -436,8 +438,16 @@ main #aboutus .imagen:hover .marco img {
 .hidedesk {
   display: none;
 }
+.hidedesk hr {
+  width: 50px;
+  color: var(--colorprincipal);
+}
 .hidemobile {
   display: block;
+}
+.hidemobile hr {
+  width: 50px;
+  color: var(--colorprincipal);
 }
 .hide {
   display: none;
