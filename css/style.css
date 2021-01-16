@@ -386,7 +386,7 @@ main #aboutus .imagen:hover .marco img {
   color: var(--colorprincipal);
 }
 #menu .underline hr {
-  width: 100%;
+  width: 50px;
   top: -5px;
   border-color: var(--colorprincipal);
 }
