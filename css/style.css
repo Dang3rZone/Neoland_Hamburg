@@ -222,7 +222,9 @@ footer a:hover {
 /* fin hero */
 
 /* inicio ourservices */
-
+main {
+  background: #1c1c1c;
+}
 main section {
   padding: calc(var(--margingrid) * 3) var(--margingrid);
 }
@@ -336,6 +338,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 /* fin aboutus */
+
 /* MENU */
 .options {
   text-align: center;
@@ -352,12 +355,12 @@ main #aboutus .imagen:hover .marco img {
   border: 3px solid blue;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
 }
 #menu article {
-  width: 250px;
-  margin: 30px 30px 30px 0;
+  width: 100%;
+  padding: 30px 30px 30px 0;
 }
 
 #menu .container h3 {
@@ -432,6 +435,16 @@ main #aboutus .imagen:hover .marco img {
   text-align: center;
 }
 
+.hidedesk {
+  display: none;
+}
+.hidemobile {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
 /* BLOG */
 
 /* mediaquerys */
@@ -458,9 +471,6 @@ main #aboutus .imagen:hover .marco img {
   main #aboutus {
     margin-bottom: 2em;
   }
-  .hide {
-    display: none;
-  }
 }
 
 @media (min-width: 768px) {
@@ -480,6 +490,27 @@ main #aboutus .imagen:hover .marco img {
   main #ourservices .grid article:last-child {
     grid-column: 3/4;
   }
+  #menu .options {
+    display: flex;
+  }
+  #menu .options .container {
+    width: 70%;
+    float: left;
+  }
+  .options nav {
+    width: 30%;
+    float: left;
+  }
+
+  .hidedesk {
+    display: block;
+  }
+  .hidemobile {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
 }
 
 @media (min-width: 1004px) {
@@ -496,5 +527,13 @@ main #aboutus .imagen:hover .marco img {
   header .menu li a {
     border: 0px;
     padding: 0.5em calc(var(--margingrid));
+  }
+  #menu figure {
+    width: 30%;
+    float: left;
+  }
+  #menu .content-article {
+    width: 60%;
+    float: left;
   }
 }
