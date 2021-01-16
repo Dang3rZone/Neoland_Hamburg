@@ -336,7 +336,134 @@ main #aboutus .imagen:hover .marco img {
 }
 
 /* fin aboutus */
+/* MENU */
+.options {
+  text-align: center;
+  align-items: center;
+}
 
+#menu {
+  background: #1c1c1c;
+  color: #ffffff;
+  display: absolute;
+}
+
+#menu .container .today {
+  border: 3px solid blue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#menu article {
+  width: 250px;
+  margin: 30px 30px 30px 0;
+}
+
+#menu .container h3 {
+  font-weight: bold;
+  padding: 20px;
+}
+
+#menu .container p {
+  font-size: small;
+  padding: 8px;
+}
+
+#menu .container a {
+  padding: 20px;
+}
+
+#menu .container ul {
+  padding: 20px;
+}
+
+#menu .container .underline {
+  margin: 0 auto;
+  text-align: center;
+}
+#menu span {
+  color: var(--colorprincipal);
+}
+#menu .underline hr {
+  width: 100%;
+  top: -5px;
+  border-color: var(--colorprincipal);
+}
+
+#menu.offers hr {
+  width: 50px;
+  border-color: var(--colorprincipal);
+}
+#menu span {
+  color: #f0543a;
+  font-weight: 700;
+}
+
+#menu h2 {
+  color: #ffffff;
+  font-family: var(--fuentesecundaria);
+  font-size: 2em;
+  text-align: center;
+}
+
+#menu .options a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+}
+#menu .today a {
+  color: var(--colorprincipal);
+}
+
+#menu .active {
+  background: var(--colorprincipal);
+  height: 40px;
+  width: 258px;
+}
+
+#menu .article {
+  align-items: center;
+}
+
+.blog .underline {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* BLOG */
+.blog {
+  width: 100vw;
+  height: 100vh;
+  display: absolute;
+}
+
+.blog .container .underline {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog .underline hr {
+  width: 50px;
+  top: -1px;
+  border-color: var(--colorprincipal);
+}
+
+.blog span {
+  color: var(--colorprincipal);
+}
+
+.blog h2 {
+  color: black;
+  font-family: var(--fuentesecundaria);
+  font-size: 2em;
+  text-align: center;
+}
+
+.blog img {
+  float: left;
+}
 /* mediaquerys */
 
 @media (min-width: 600px) {
@@ -379,6 +506,9 @@ main #aboutus .imagen:hover .marco img {
   }
   main #ourservices .grid article:last-child {
     grid-column: 3/4;
+  }
+  .hide {
+    display: none;
   }
 }
 
