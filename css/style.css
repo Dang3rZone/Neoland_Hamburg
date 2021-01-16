@@ -222,9 +222,7 @@ footer a:hover {
 /* fin hero */
 
 /* inicio ourservices */
-main {
-  background: #1c1c1c;
-}
+
 main section {
   padding: calc(var(--margingrid) * 3) var(--margingrid);
 }
@@ -503,10 +501,10 @@ main #aboutus .imagen:hover .marco img {
   }
 
   .hidedesk {
-    display: block;
+    display: none;
   }
   .hidemobile {
-    display: none;
+    display: block;
   }
   .hide {
     display: block;
