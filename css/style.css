@@ -596,6 +596,42 @@ nav .meals li {
     padding-top: 1rem;
     padding-left: 2rem;
   }
+
+  #aboutus .article {
+    position: relative;
+  }
+  #aboutus .article figure {
+    position: absolute;
+  }
+
+  #aboutus .cuadrito {
+    width: 100px;
+    height: 100px;
+    background: var(--colorprincipal);
+    position: absolute;
+    color: white;
+    top: 31.2rem;
+    left: 3.2rem;
+    position: absolute;
+    opacity: 0.8;
+  }
+  #aboutus .cuadritodos {
+    width: 100px;
+    height: 100px;
+    background: var(--colorprincipal);
+    position: relative;
+    color: white;
+    top: 31.2rem;
+    left: 26.2rem;
+    position: absolute;
+    opacity: 0.8;
+  }
+  #aboutus .cuadrito p {
+    color: white;
+  }
+  #aboutus .cuadritodos p {
+    color: white;
+  }
 }
 
 @media (min-width: 1004px) {
@@ -670,5 +706,47 @@ nav .meals li {
 
   nav .meals li {
     width: 100%;
+  }
+  #aboutus .cuadrito {
+    width: 100px;
+    height: 100px;
+    background: var(--colorprincipal);
+    position: relative;
+    color: white;
+    top: 14.2rem;
+    left: 29.8rem;
+    position: absolute;
+    opacity: 0.8;
+  }
+  #aboutus .cuadritodos {
+    width: 100px;
+    height: 100px;
+    background: var(--colorprincipal);
+    position: relative;
+    color: white;
+    top: 14.2rem;
+    left: 51.3rem;
+    position: absolute;
+    opacity: 0.8;
+  }
+  #aboutus .cuadrito p {
+    color: white;
+  }
+  #aboutus .cuadritodos p {
+    color: white;
+  }
+  #aboutus .cuadritotres {
+    width: 100px;
+    height: 100px;
+    background: var(--colorprincipal);
+    position: relative;
+    color: white;
+    top: 14.2rem;
+    left: 72.9rem;
+    position: absolute;
+    opacity: 0.8;
+  }
+  #aboutus .cuadritotres p {
+    color: white;
   }
 }
