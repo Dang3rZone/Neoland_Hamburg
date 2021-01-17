@@ -437,6 +437,7 @@ main #aboutus .imagen:hover .marco img {
 #menu .active {
   background: var(--colorprincipal);
   padding: 5px;
+  padding-right: 4rem;
   border-radius: 5px;
 }
 
@@ -465,7 +466,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 nav .meals li {
-  padding: 10px 5px;
+  padding: 1em;
 }
 
 .blog .underline {
@@ -590,6 +591,11 @@ nav .meals li {
   #menu section p {
     padding-top: 1em;
   }
+
+  #aboutus .column div {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
 }
 
 @media (min-width: 1004px) {
@@ -611,6 +617,7 @@ nav .meals li {
     width: 30%;
     float: left;
   }
+
   #menu .content-article {
     width: 60%;
     float: left;
@@ -634,24 +641,34 @@ nav .meals li {
 
   #menu .hidemobile {
     display: block;
-    padding-top: 2em;
+    padding-top: 5em;
   }
   #menu .hidemobile h3 {
     display: block;
-    padding-left: 14em;
+    padding-left: 13em;
   }
 
   #menu .options {
     position: absolute;
-    padding-top: 2em;
+    padding-top: 6em;
     padding: left 0rem;
     display: flex;
     flex-direction: column;
   }
   main section {
-    padding: 0rem 0rem;
+    padding: 2rem 2rem;
   }
   #menu h2 {
-    padding-top: 2em;
+    padding-top: 2rem;
+    padding-right: 13rem;
+    padding-bottom: 0rem;
+  }
+
+  #menu .today .push {
+    padding-bottom: 27rem;
+  }
+
+  nav .meals li {
+    width: 100%;
   }
 }
