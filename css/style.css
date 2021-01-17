@@ -379,20 +379,28 @@ main #aboutus .imagen:hover .marco img {
   padding: 20px;
 }
 
-#menu .container .underline {
+#menu .underline {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: var(--margingrid);
+}
+/* #menu .underline span {
   margin: 0 auto;
   text-align: center;
-}
+} */
 #menu span {
   color: var(--colorprincipal);
 }
 #menu .underline hr {
   width: 50px;
-  top: -5px;
+  bottom: -5px;
   border-color: var(--colorprincipal);
 }
 
-#menu.offers hr {
+#menu .offers hr {
   width: 50px;
   border-color: var(--colorprincipal);
 }
@@ -426,6 +434,10 @@ main #aboutus .imagen:hover .marco img {
   align-items: center;
 }
 
+#menu section p {
+  color: white;
+}
+
 nav .meals li {
   padding: 5px 5px;
 }
@@ -437,17 +449,19 @@ nav .meals li {
 
 .hidedesk {
   display: none;
+  color: #fff;
 }
 .hidedesk hr {
   width: 50px;
-  color: var(--colorprincipal);
+  border-color: var(--colorprincipal);
 }
 .hidemobile {
   display: block;
+  color: #fff;
 }
 .hidemobile hr {
   width: 50px;
-  color: var(--colorprincipal);
+  border-color: var(--colorprincipal);
 }
 .hide {
   display: none;
