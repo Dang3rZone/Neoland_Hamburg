@@ -338,7 +338,7 @@ main #aboutus .imagen:hover .marco img {
 /* fin aboutus */
 
 /* MENU */
-.options {
+#menu .options {
   text-align: center;
   align-items: center;
 }
@@ -363,7 +363,12 @@ main #aboutus .imagen:hover .marco img {
 
 #menu .container h3 {
   font-weight: bold;
-  padding: 20px;
+}
+#menu section h3 {
+  font-weight: bold;
+  padding-left: 15em;
+  text-align: left;
+  align-content: left;
 }
 
 #menu .container p {
@@ -372,11 +377,11 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu .container a {
-  padding: 20px;
+  padding: 15em;
 }
 
 #menu .container ul {
-  padding: 20px;
+  padding: 10em;
 }
 
 #menu .underline {
@@ -386,6 +391,8 @@ main #aboutus .imagen:hover .marco img {
   margin-bottom: 0px;
   text-align: center;
   margin-bottom: var(--margingrid);
+  position: absolute;
+  margin-left: 57em;
 }
 /* #menu .underline span {
   margin: 0 auto;
@@ -396,8 +403,10 @@ main #aboutus .imagen:hover .marco img {
 }
 #menu .underline hr {
   width: 50px;
-  bottom: -5px;
+  top: -3px;
   border-color: var(--colorprincipal);
+  position: absolute;
+  padding-left: 6em;
 }
 
 #menu .offers hr {
@@ -428,6 +437,8 @@ main #aboutus .imagen:hover .marco img {
 
 #menu .active {
   background: var(--colorprincipal);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #menu .article {
@@ -436,10 +447,19 @@ main #aboutus .imagen:hover .marco img {
 
 #menu section p {
   color: white;
+  padding-left: 13rem;
+}
+
+#menu .options .meals {
+  text-align: left;
+  padding-left: 17rem;
+}
+#menu .options .meals a {
+  font-weight: 600;
 }
 
 nav .meals li {
-  padding: 5px 5px;
+  padding: 10px 5px;
 }
 
 .blog .underline {
@@ -459,10 +479,7 @@ nav .meals li {
   display: block;
   color: #fff;
 }
-.hidemobile hr {
-  width: 50px;
-  border-color: var(--colorprincipal);
-}
+
 .hide {
   display: none;
 }
