@@ -373,7 +373,7 @@ main #aboutus .imagen:hover .marco img {
 
 #menu .container p {
   font-size: small;
-  padding: 8px;
+  padding: 1em;
 }
 
 #menu .container a {
@@ -456,6 +456,13 @@ main #aboutus .imagen:hover .marco img {
 }
 #menu .options .meals a {
   font-weight: 600;
+}
+
+#menu .today article .content-article h3 {
+  padding-right: 13em;
+}
+#menu .today article .content-article p {
+  padding-right: 16em;
 }
 
 nav .meals li {
@@ -542,13 +549,45 @@ nav .meals li {
   }
 
   .hidedesk {
-    display: none;
+    display: block;
   }
   .hidemobile {
-    display: block;
+    display: none;
   }
   .hide {
-    display: block;
+    display: none;
+  }
+  #menu .today article .content-article h3 {
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+  #menu .today article .content-article p {
+    padding-right: 1em;
+  }
+  #menu .today article .content-article a {
+    padding-right: 1em;
+  }
+
+  #menu .today img {
+    width: 70%;
+  }
+
+  #menu .option .meals li {
+    padding-left: 2em;
+  }
+  #menu .options .meals {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .hidedesk .offers {
+    padding-left: 0em;
+    position: absolute;
+  }
+  .hidedesk p {
+    padding-top: 1em;
+  }
+  #menu section p {
+    padding-top: 1em;
   }
 }
 
@@ -574,5 +613,10 @@ nav .meals li {
   #menu .content-article {
     width: 60%;
     float: left;
+  }
+  #aboutus .column div {
+    position: absolute;
+    padding-left: 2em;
+    padding-top: 1rem;
   }
 }
