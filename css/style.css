@@ -350,7 +350,6 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu .container .today {
-  border: 3px solid blue;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -487,10 +486,6 @@ nav .meals li {
   color: #fff;
 }
 
-.hide {
-  display: none;
-}
-
 /* BLOG */
 
 /* mediaquerys */
@@ -517,6 +512,9 @@ nav .meals li {
   main #aboutus {
     margin-bottom: 2em;
   }
+  .hide {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -539,6 +537,11 @@ nav .meals li {
   #menu .options {
     display: flex;
   }
+  #menu .container a {
+    padding: 0em;
+    text-decoration: none;
+  }
+
   #menu .options .container {
     width: 70%;
     float: left;
@@ -554,9 +557,7 @@ nav .meals li {
   .hidemobile {
     display: none;
   }
-  .hide {
-    display: none;
-  }
+
   #menu .today article .content-article h3 {
     padding-right: 1em;
     padding-top: 1em;
@@ -618,5 +619,39 @@ nav .meals li {
     position: absolute;
     padding-left: 2em;
     padding-top: 1rem;
+  }
+  .hide {
+    display: block;
+  }
+
+  #menu .container {
+    padding-left: 18em;
+  }
+
+  #menu .hidedesk {
+    display: none;
+  }
+
+  #menu .hidemobile {
+    display: block;
+    padding-top: 2em;
+  }
+  #menu .hidemobile h3 {
+    display: block;
+    padding-left: 14em;
+  }
+
+  #menu .options {
+    position: absolute;
+    padding-top: 2em;
+    padding: left 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  main section {
+    padding: 0rem 0rem;
+  }
+  #menu h2 {
+    padding-top: 2em;
   }
 }
