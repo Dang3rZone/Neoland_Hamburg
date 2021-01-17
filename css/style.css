@@ -731,9 +731,11 @@ nav .meals li {
   }
   #aboutus .cuadrito p {
     color: white;
+    font-weight: 700;
   }
   #aboutus .cuadritodos p {
     color: white;
+    font-weight: 700;
   }
   #aboutus .cuadritotres {
     width: 100px;
@@ -748,5 +750,6 @@ nav .meals li {
   }
   #aboutus .cuadritotres p {
     color: white;
+    font-weight: 700;
   }
 }
