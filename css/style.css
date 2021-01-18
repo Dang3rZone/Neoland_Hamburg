@@ -356,7 +356,8 @@ main #aboutus .imagen:hover .marco img {
 }
 #menu article {
   width: 100%;
-  padding: 30px 30px 30px 0;
+  padding-left: 10rem;
+  padding-bottom: 1rem;
 }
 
 #menu .container h3 {
