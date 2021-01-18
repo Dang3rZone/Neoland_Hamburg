@@ -344,8 +344,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu {
-  background: #1c1c1c;
-  color: #ffffff;
+  color: black;
   display: absolute;
 }
 
@@ -391,7 +390,7 @@ main #aboutus .imagen:hover .marco img {
   text-align: center;
   margin-bottom: var(--margingrid);
   position: absolute;
-  margin-left: 57em;
+  margin-left: 50em;
 }
 /* #menu .underline span {
   margin: 0 auto;
@@ -418,7 +417,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu h2 {
-  color: #ffffff;
+  color: black;
   font-family: var(--fuentesecundaria);
   font-size: 2em;
   text-align: center;
@@ -426,7 +425,7 @@ main #aboutus .imagen:hover .marco img {
 
 #menu .options a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   cursor: pointer;
   font-weight: 400;
 }
@@ -446,7 +445,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu section p {
-  color: white;
+  color: black;
   padding-left: 13rem;
 }
 
@@ -476,7 +475,7 @@ nav .meals li {
 
 .hidedesk {
   display: none;
-  color: #fff;
+  color: black;
 }
 .hidedesk hr {
   width: 50px;
@@ -484,7 +483,7 @@ nav .meals li {
 }
 .hidemobile {
   display: block;
-  color: #fff;
+  color: black;
 }
 
 /* BLOG */
@@ -591,6 +590,9 @@ nav .meals li {
   #menu section p {
     padding-top: 1em;
   }
+  #menu .underline {
+    margin-left: 20em;
+  }
 
   #aboutus .column div {
     padding-top: 1rem;
@@ -607,24 +609,22 @@ nav .meals li {
   #aboutus .cuadrito {
     width: 100px;
     height: 100px;
-    background: var(--colorprincipal);
+    background-color: rgba(240, 62, 62, 0.788);
     position: absolute;
     color: white;
     top: 31.2rem;
     left: 3.2rem;
     position: absolute;
-    opacity: 0.8;
   }
   #aboutus .cuadritodos {
     width: 100px;
     height: 100px;
-    background: var(--colorprincipal);
+    background-color: rgba(240, 62, 62, 0.788);
     position: relative;
     color: white;
     top: 31.2rem;
     left: 26.2rem;
     position: absolute;
-    opacity: 0.8;
   }
   #aboutus .cuadrito p {
     color: white;
@@ -710,24 +710,22 @@ nav .meals li {
   #aboutus .cuadrito {
     width: 100px;
     height: 100px;
-    background: var(--colorprincipal);
+    background-color: rgba(240, 62, 62, 0.788);
     position: relative;
     color: white;
     top: 14.2rem;
     left: 29.8rem;
     position: absolute;
-    opacity: 0.8;
   }
   #aboutus .cuadritodos {
     width: 100px;
     height: 100px;
-    background: var(--colorprincipal);
+    background-color: rgba(240, 62, 62, 0.788);
     position: relative;
     color: white;
     top: 14.2rem;
     left: 51.3rem;
     position: absolute;
-    opacity: 0.8;
   }
   #aboutus .cuadrito p {
     color: white;
@@ -740,13 +738,12 @@ nav .meals li {
   #aboutus .cuadritotres {
     width: 100px;
     height: 100px;
-    background: var(--colorprincipal);
+    background-color: rgba(240, 62, 62, 0.788);
     position: relative;
     color: white;
     top: 14.2rem;
     left: 72.9rem;
     position: absolute;
-    opacity: 0.8;
   }
   #aboutus .cuadritotres p {
     color: white;
