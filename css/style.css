@@ -341,11 +341,14 @@ main #aboutus .imagen:hover .marco img {
 #menu .options {
   text-align: center;
   align-items: center;
+  padding-top: 2rem;
+  padding-left: 7rem;
 }
 
 #menu {
-  color: black;
+  color: white;
   display: absolute;
+  background: #222222;
 }
 
 #menu .container .today {
@@ -418,15 +421,16 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu h2 {
-  color: black;
+  color: white;
   font-family: var(--fuentesecundaria);
   font-size: 2em;
   text-align: center;
+  padding-top: 2rem;
 }
 
 #menu .options a {
   text-decoration: none;
-  color: black;
+  color: white;
   cursor: pointer;
   font-weight: 400;
 }
@@ -437,7 +441,7 @@ main #aboutus .imagen:hover .marco img {
 #menu .active {
   background: var(--colorprincipal);
   padding: 5px;
-  padding-right: 4rem;
+  padding-right: 22rem;
   border-radius: 5px;
 }
 
@@ -446,7 +450,7 @@ main #aboutus .imagen:hover .marco img {
 }
 
 #menu section p {
-  color: black;
+  color: white;
   padding-left: 13rem;
 }
 
@@ -476,7 +480,7 @@ nav .meals li {
 
 .hidedesk {
   display: none;
-  color: black;
+  color: white;
 }
 .hidedesk hr {
   width: 50px;
@@ -484,7 +488,7 @@ nav .meals li {
 }
 .hidemobile {
   display: block;
-  color: black;
+  color: white;
 }
 
 /* BLOG */
@@ -691,6 +695,9 @@ nav .meals li {
     padding: left 0rem;
     display: flex;
     flex-direction: column;
+  }
+  #menu .container .move {
+    padding-left: -10rem;
   }
   main section {
     padding: 2rem 2rem;
