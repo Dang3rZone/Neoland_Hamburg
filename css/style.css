@@ -749,4 +749,7 @@ nav .meals li {
     color: white;
     font-weight: 700;
   }
+  #menu .underline {
+    margin-left: 50em;
+  }
 }
