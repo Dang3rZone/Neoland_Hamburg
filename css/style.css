@@ -637,6 +637,9 @@ nav .meals li {
   #aboutus .cuadritodos p {
     color: white;
   }
+  section.move {
+    padding-left: 9.3rem;
+  }
 }
 
 @media (min-width: 1004px) {
